@@ -1,5 +1,5 @@
-# GoCD Agent Docker image - windows 10 Version 1903 (OS Build 18362.116)
-GoCD Windows Agent Docker image
+# GoCD Agent Docker image
+GoCD Windows Agent Docker image (windows 10 Version 1903 (OS Build 18362.116))
 
 # GoCD Agent Docker image
 
