@@ -54,11 +54,13 @@ function setup_autoregister_properties_file {
 
 setup_autoregister_properties_file
 
+echo "autoregister file content:"
+cat $AGENT_AUTOREGISTER_PROPERTIES
+
 echo "Start Go agent server"
 echo "GO server url $Env:GO_SERVER_URL"
 
-echo "autoregister file content:"
-cat $AGENT_AUTOREGISTER_PROPERTIES
+Get-Service -Name "Go*"
 
 Start-Service -Name "Go*" ;
 

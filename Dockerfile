@@ -10,7 +10,9 @@ RUN  powershell.exe -Command \
 
 # Install gocd agent
 RUN powershell.exe -Command \
-    choco install -y gocdagent --version 19.3.0 --ia '/START_AGENT=NO /D=C:\GoAgent'
+    choco install -y gocdagent --version 19.3.0 --ia '/D=C:\GoAgent' ; \
+    Set-Service -Name 'Go Agent' -StartupType Manual ; \
+    Get-Service -Name 'Go Agent' ;
 
 
 COPY docker-entrypoint.ps1 c:/docker-entrypoint.ps1
