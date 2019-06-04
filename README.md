@@ -12,7 +12,7 @@ Please make sure to log them at https://github.com/DanH91/gocd-agent-windows-10-
 Start the container with this:
 
 ```
-docker run -d -e GO_SERVER_URL=... danh91/gocd-agent-windows-10-1903:v2019.5.0
+docker run -d -e GO_SERVER_URL=... danh91/gocd-agent-windows-10-1903:2019.5.0
 ```
 
 **Note:** Please make sure to *always* provide the version. We do not publish the `latest` tag. And we don't intend to.
@@ -46,7 +46,7 @@ docker run -d \
         -e AGENT_AUTO_REGISTER_RESOURCES=... \
         -e AGENT_AUTO_REGISTER_ENVIRONMENTS=... \
         -e AGENT_AUTO_REGISTER_HOSTNAME=... \
-        danh91/gocd-agent-windows-10-1903:v2019.5.0
+        danh91/gocd-agent-windows-10-1903:2019.5.0
 ```
 
 If the `AGENT_AUTO_REGISTER_*` variables are provided (we recommend that you do), then the agent will be automatically approved by the server. See the [auto registration docs](https://docs.gocd.io/current/advanced_usage/agent_auto_register.html) on the GoCD website.
